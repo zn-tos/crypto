@@ -1,0 +1,340 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'jiemian.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow
+import sys
+
+
+class Ui_MainWindow(object):
+
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(774, 794)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox.setGeometry(QtCore.QRect(10, 0, 171, 321))
+        self.groupBox.setObjectName("groupBox")
+        self.label = QtWidgets.QLabel(self.groupBox)
+        self.label.setGeometry(QtCore.QRect(60, 20, 54, 21))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        self.label.setPalette(palette)
+        self.label.setTextFormat(QtCore.Qt.AutoText)
+        self.label.setObjectName("label")
+        self.label_Send_ip = QtWidgets.QLabel(self.groupBox)
+        self.label_Send_ip.setGeometry(QtCore.QRect(10, 50, 31, 21))
+        self.label_Send_ip.setObjectName("label_Send_ip")
+        self.Send_ip = QtWidgets.QLineEdit(self.groupBox)
+        self.Send_ip.setGeometry(QtCore.QRect(50, 50, 113, 20))
+        self.Send_ip.setObjectName("Send_ip")
+        self.label_Send_port = QtWidgets.QLabel(self.groupBox)
+        self.label_Send_port.setGeometry(QtCore.QRect(10, 90, 31, 21))
+        self.label_Send_port.setObjectName("label_Send_port")
+        self.Send_port = QtWidgets.QLineEdit(self.groupBox)
+        self.Send_port.setGeometry(QtCore.QRect(50, 90, 61, 20))
+        self.Send_port.setObjectName("Send_port")
+        self.label_4 = QtWidgets.QLabel(self.groupBox)
+        self.label_4.setGeometry(QtCore.QRect(60, 120, 54, 21))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 0, 0))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(120, 120, 120))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        self.label_4.setPalette(palette)
+        self.label_4.setTextFormat(QtCore.Qt.AutoText)
+        self.label_4.setObjectName("label_4")
+        self.label_Recv_ip = QtWidgets.QLabel(self.groupBox)
+        self.label_Recv_ip.setGeometry(QtCore.QRect(10, 150, 31, 21))
+        self.label_Recv_ip.setObjectName("label_Recv_ip")
+        self.Recv_ip = QtWidgets.QLineEdit(self.groupBox)
+        self.Recv_ip.setGeometry(QtCore.QRect(50, 150, 113, 20))
+        self.Recv_ip.setObjectName("Recv_ip")
+        self.label_Recv_port = QtWidgets.QLabel(self.groupBox)
+        self.label_Recv_port.setGeometry(QtCore.QRect(10, 190, 31, 21))
+        self.label_Recv_port.setObjectName("label_Recv_port")
+        self.Recv_port = QtWidgets.QLineEdit(self.groupBox)
+        self.Recv_port.setGeometry(QtCore.QRect(50, 190, 61, 20))
+        self.Recv_port.setObjectName("Recv_port")
+        self.On_net = QtWidgets.QPushButton(self.groupBox)
+        self.On_net.setGeometry(QtCore.QRect(30, 230, 91, 31))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(10)
+        self.On_net.setFont(font)
+        self.On_net.setObjectName("On_net")
+        self.Off_net = QtWidgets.QPushButton(self.groupBox)
+        self.Off_net.setGeometry(QtCore.QRect(30, 280, 91, 31))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(10)
+        self.Off_net.setFont(font)
+        self.Off_net.setObjectName("Off_net")
+        self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_2.setGeometry(QtCore.QRect(190, 0, 171, 321))
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.PP_key = QtWidgets.QPushButton(self.groupBox_2)
+        self.PP_key.setGeometry(QtCore.QRect(20, 30, 131, 41))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(10)
+        self.PP_key.setFont(font)
+        self.PP_key.setObjectName("PP_key")
+        self.Change_key = QtWidgets.QPushButton(self.groupBox_2)
+        self.Change_key.setGeometry(QtCore.QRect(20, 80, 131, 41))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(10)
+        self.Change_key.setFont(font)
+        self.Change_key.setObjectName("Change_key")
+        self.label_Share_key = QtWidgets.QLabel(self.groupBox_2)
+        self.label_Share_key.setGeometry(QtCore.QRect(10, 140, 71, 16))
+        self.label_Share_key.setObjectName("label_Share_key")
+        self.Share_key = QtWidgets.QTextBrowser(self.groupBox_2)
+        self.Share_key.setGeometry(QtCore.QRect(10, 170, 151, 131))
+        self.Share_key.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.Share_key.setObjectName("Share_key")
+        self.groupBox_3 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_3.setGeometry(QtCore.QRect(370, 0, 391, 321))
+        self.groupBox_3.setObjectName("groupBox_3")
+        self.label_Send_msg = QtWidgets.QLabel(self.groupBox_3)
+        self.label_Send_msg.setGeometry(QtCore.QRect(33, 22, 51, 20))
+        self.label_Send_msg.setObjectName("label_Send_msg")
+        self.Net_send = QtWidgets.QPlainTextEdit(self.groupBox_3)
+        self.Net_send.setGeometry(QtCore.QRect(20, 50, 321, 101))
+        self.Net_send.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.Net_send.setObjectName("Net_send")
+        self.label_Recv_msg = QtWidgets.QLabel(self.groupBox_3)
+        self.label_Recv_msg.setGeometry(QtCore.QRect(30, 160, 61, 16))
+        self.label_Recv_msg.setObjectName("label_Recv_msg")
+        self.Net_recv = QtWidgets.QPlainTextEdit(self.groupBox_3)
+        self.Net_recv.setGeometry(QtCore.QRect(20, 190, 321, 71))
+        self.Net_recv.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.Net_recv.setObjectName("Net_recv")
+        self.RSA_sign = QtWidgets.QPushButton(self.groupBox_3)
+        self.RSA_sign.setGeometry(QtCore.QRect(40, 270, 111, 31))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(12)
+        self.RSA_sign.setFont(font)
+        self.RSA_sign.setObjectName("RSA_sign")
+        self.Send_msg = QtWidgets.QPushButton(self.groupBox_3)
+        self.Send_msg.setGeometry(QtCore.QRect(220, 270, 101, 31))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(12)
+        self.Send_msg.setFont(font)
+        self.Send_msg.setObjectName("Send_msg")
+        self.groupBox_4 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_4.setGeometry(QtCore.QRect(10, 320, 381, 411))
+        self.groupBox_4.setObjectName("groupBox_4")
+        self.label_Enc_mode = QtWidgets.QLabel(self.groupBox_4)
+        self.label_Enc_mode.setGeometry(QtCore.QRect(10, 30, 71, 21))
+        self.label_Enc_mode.setObjectName("label_Enc_mode")
+        self.Enc_mode1 = QtWidgets.QComboBox(self.groupBox_4)
+        self.Enc_mode1.setGeometry(QtCore.QRect(10, 70, 111, 22))
+        self.Enc_mode1.setEditable(True)
+        self.Enc_mode1.setCurrentText("")
+        self.Enc_mode1.setObjectName("Enc_mode1")
+        self.Enc_mode2 = QtWidgets.QComboBox(self.groupBox_4)
+        self.Enc_mode2.setGeometry(QtCore.QRect(10, 100, 111, 22))
+        self.Enc_mode2.setEditable(True)
+        self.Enc_mode2.setObjectName("Enc_mode2")
+        self.label_Edit_key = QtWidgets.QLabel(self.groupBox_4)
+        self.label_Edit_key.setGeometry(QtCore.QRect(10, 160, 71, 21))
+        self.label_Edit_key.setObjectName("label_Edit_key")
+        self.Edit_key = QtWidgets.QPlainTextEdit(self.groupBox_4)
+        self.Edit_key.setGeometry(QtCore.QRect(10, 190, 141, 111))
+        self.Edit_key.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.Edit_key.setObjectName("Edit_key")
+        self.label_Plaintext = QtWidgets.QLabel(self.groupBox_4)
+        self.label_Plaintext.setGeometry(QtCore.QRect(160, 10, 61, 21))
+        self.label_Plaintext.setObjectName("label_Plaintext")
+        self.Plaintext = QtWidgets.QPlainTextEdit(self.groupBox_4)
+        self.Plaintext.setGeometry(QtCore.QRect(160, 50, 211, 81))
+        self.Plaintext.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.Plaintext.setObjectName("Plaintext")
+        self.Plain_clear = QtWidgets.QPushButton(self.groupBox_4)
+        self.Plain_clear.setGeometry(QtCore.QRect(290, 140, 75, 23))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        self.Plain_clear.setFont(font)
+        self.Plain_clear.setObjectName("Plain_clear")
+        self.label_13 = QtWidgets.QLabel(self.groupBox_4)
+        self.label_13.setGeometry(QtCore.QRect(160, 160, 71, 21))
+        self.label_13.setObjectName("label_13")
+        self.Ciphertext = QtWidgets.QPlainTextEdit(self.groupBox_4)
+        self.Ciphertext.setGeometry(QtCore.QRect(160, 190, 211, 81))
+        self.Ciphertext.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.Ciphertext.setObjectName("Ciphertext")
+        self.Cipher_clear = QtWidgets.QPushButton(self.groupBox_4)
+        self.Cipher_clear.setGeometry(QtCore.QRect(290, 280, 75, 23))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        self.Cipher_clear.setFont(font)
+        self.Cipher_clear.setObjectName("Cipher_clear")
+        self.Encrypt = QtWidgets.QPushButton(self.groupBox_4)
+        self.Encrypt.setGeometry(QtCore.QRect(10, 330, 151, 61))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(20)
+        self.Encrypt.setFont(font)
+        self.Encrypt.setObjectName("Encrypt")
+        self.Decrypt = QtWidgets.QPushButton(self.groupBox_4)
+        self.Decrypt.setGeometry(QtCore.QRect(200, 330, 161, 61))
+        self.Decrypt.setBaseSize(QtCore.QSize(0, 0))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(20)
+        self.Decrypt.setFont(font)
+        self.Decrypt.setIconSize(QtCore.QSize(20, 20))
+        self.Decrypt.setObjectName("Decrypt")
+        self.groupBox_5 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_5.setGeometry(QtCore.QRect(400, 320, 361, 411))
+        self.groupBox_5.setObjectName("groupBox_5")
+        self.Show_msg = QtWidgets.QTextBrowser(self.groupBox_5)
+        self.Show_msg.setGeometry(QtCore.QRect(20, 30, 331, 371))
+        self.Show_msg.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.Show_msg.setObjectName("Show_msg")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 774, 26))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.connect()
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "加解密综合服务系统"))
+        self.Enc_mode1.addItem("仿射加密")
+        self.Enc_mode1.addItem("流密码加密")
+        self.Enc_mode1.addItem("分组加密")
+        self.Enc_mode1.addItem("非对称加密")
+        self.groupBox.setTitle(_translate("MainWindow", "网络设置"))
+        self.label.setText(_translate("MainWindow", "发送方"))
+        self.label_Send_ip.setText(_translate("MainWindow", "IP："))
+        self.label_Send_port.setText(_translate("MainWindow", "端口："))
+        self.label_4.setText(_translate("MainWindow", "接受方"))
+        self.label_Recv_ip.setText(_translate("MainWindow", "IP："))
+        self.label_Recv_port.setText(_translate("MainWindow", "端口："))
+        self.On_net.setText(_translate("MainWindow", "连接网络"))
+        self.Off_net.setText(_translate("MainWindow", "断开网络"))
+        self.groupBox_2.setTitle(_translate("MainWindow", "密钥协商"))
+        self.PP_key.setText(_translate("MainWindow", "公私钥生成"))
+        self.Change_key.setText(_translate("MainWindow", "密钥交换"))
+        self.label_Share_key.setText(_translate("MainWindow", "共享密钥"))
+        self.groupBox_3.setTitle(_translate("MainWindow", "网络通信(AES)"))
+        self.label_Send_msg.setText(_translate("MainWindow", "发送区："))
+        self.label_Recv_msg.setText(_translate("MainWindow", "接受区："))
+        self.RSA_sign.setText(_translate("MainWindow", "数字签名"))
+        self.Send_msg.setText(_translate("MainWindow", "发送消息"))
+        self.groupBox_4.setTitle(_translate("MainWindow", "数据加密"))
+        self.label_Enc_mode.setText(_translate("MainWindow", "加密模式"))
+        self.label_Edit_key.setText(_translate("MainWindow", "密钥配置"))
+        self.label_Plaintext.setText(_translate("MainWindow", "明文："))
+        self.Plain_clear.setText(_translate("MainWindow", "清空"))
+        self.label_13.setText(_translate("MainWindow", "密文："))
+        self.Cipher_clear.setText(_translate("MainWindow", "清空"))
+        self.Encrypt.setText(_translate("MainWindow", "加密"))
+        self.Decrypt.setText(_translate("MainWindow", "解密"))
+        self.groupBox_5.setTitle(_translate("MainWindow", "操作信息"))
+        self.Enc_mode2.addItem("默认")
+
+    def connect(self):
+        self.Enc_mode1.currentIndexChanged.connect(self.combobox_change)
+        self.On_net.clicked.connect(self.click_On_net)
+        self.Off_net.clicked.connect(self.click_Off_net)
+        self.PP_key.clicked.connect(self.click_PP_key)
+        self.Change_key.clicked.connect(self.click_Change_key)
+        self.RSA_sign.clicked.connect(self.click_RSA_sign)
+        self.Send_msg.clicked.connect(self.click_Send_msg)
+        self.Plain_clear.clicked.connect(self.click_Plain_clear)
+        self.Cipher_clear.clicked.connect(self.click_Cipher_clear)
+        self.Encrypt.clicked.connect(self.click_Encrypt)
+        self.Decrypt.clicked.connect(self.click_Decrypt)
+
+    def click_On_net(self):
+        raise NotImplementedError
+
+    def click_Off_net(self):
+        raise NotImplementedError
+
+    def click_PP_key(self):
+        raise NotImplementedError
+
+    def click_Change_key(self):
+        raise NotImplementedError
+
+    def click_RSA_sign(self):
+        raise NotImplementedError
+
+    def click_Send_msg(self):
+        raise NotImplementedError
+
+    def click_Plain_clear(self):
+        raise NotImplementedError
+
+    def click_Cipher_clear(self):
+        raise NotImplementedError
+
+    def click_Encrypt(self):
+        raise NotImplementedError
+
+    def click_Decrypt(self):
+        raise NotImplementedError
+
+    def combobox_change(self):
+        self.Enc_mode2.clear()
+        if self.Enc_mode1.currentIndex() == 0:
+            self.Enc_mode2.addItem("默认")
+        if self.Enc_mode1.currentIndex() == 1:
+            self.Enc_mode2.addItem("RC4")
+            self.Enc_mode2.addItem("LFSR+J-K触发器")
+        if self.Enc_mode1.currentIndex() == 2:
+            self.Enc_mode2.addItem("DES")
+            self.Enc_mode2.addItem("AES")
+        if self.Enc_mode1.currentIndex() == 3:
+            self.Enc_mode2.addItem("RSA")
+            msg = '默认公私钥对\ne=5\nd=26253'
+            self.Edit_key.setPlainText(msg)
+
+    def send_Show_msg(self, msg):
+        self.Show_msg.append(msg)
+        self.Show_msg.moveCursor(QtGui.QTextCursor.End)
+
+
+if __name__ == '__main__':
+    """
+    显示界面
+    """
+    app = QApplication(sys.argv)
+    mainWindow = QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(mainWindow)
+    mainWindow.show()
+    sys.exit(app.exec_())
